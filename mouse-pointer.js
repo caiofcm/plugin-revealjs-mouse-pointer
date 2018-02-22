@@ -34,7 +34,7 @@
 		if (!toggleBind) {
 			document.removeEventListener('mousemove', mouse_pointing)
 			tail.style.display = 'none'
-			body.style.cursor = 'pointer'
+			body.style.cursor = 'auto'
 		} else {
 			tail.style.display = 'block'
 			tail.style.width = '30px'

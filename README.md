@@ -8,6 +8,8 @@ Add `mouse-pointer.js` file to revealjs folder: `plugin/mouse-pointer/` and add 
 
 See `example.html` for simple example using CDN.
 
+Press CAPSLOCK to enable the mouse pointer
+
 ```html
 <script>
 Reveal.initialize({
@@ -19,6 +21,6 @@ Reveal.initialize({
 </script>
 ```
 	
-## Testing
+## Demo
 
-Press CAPSLOCK to enable the mouse pointer
+![](demo.gif)
