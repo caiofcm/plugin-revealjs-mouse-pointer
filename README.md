@@ -6,6 +6,8 @@ Dummy Mouse Pointer for RevealJS
 
 Add `mouse-pointer.js` file to revealjs folder: `plugin/mouse-pointer/` and add the following to the html presentation file:
 
+See `example.html` for simple example using CDN.
+
 ```html
 <script>
 Reveal.initialize({

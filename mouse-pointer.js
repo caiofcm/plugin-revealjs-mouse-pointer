@@ -19,9 +19,11 @@
 		Object.assign(tail.style, initial_css)
 		body.appendChild(tail)
 		setKeyboards()
+		if (window.Reveal.registerKeyboardShortcut) {
+			Reveal.registerKeyboardShortcut('CAPSLOCK', 'Toggle Mouse Pointer');
+		}
 	}
 	
-
 	function mouse_pointing(e) {
 		tail.style.display = 'block'
 		tail.style.left = e.pageX - 15 + 'px'
@@ -29,8 +31,6 @@
 	}
 
 	function toogleMousePointer () {
-		console.log(toggleBind)
-		const tailClass = tail.classList
 		if (!toggleBind) {
 			document.removeEventListener('mousemove', mouse_pointing)
 			tail.style.display = 'none'
@@ -51,7 +51,6 @@
 				toggleBind = !toggleBind
 				toogleMousePointer()
 			}
-			if (window.Reveal) Reveal.registerKeyboardShortcut('CAPSLOCK', 'Toggle Mouse Pointer');		
 		}, false )
 	}
 	
